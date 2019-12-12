@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">This is a survey about your favorite food!</p>
+    </header>
+    <form id="survey-form" action="index.html" method="post">
+      <div class="flex-container">
+        <div class="name">
+          <label id="name-label" for="name">Name:</label>
+          <input id="name" class="form-control" type="text" name="name" placeholder="Enter your Name" required>
+        </div>
+        <div class="email">
+          <label id="email-label" for="email">Email:</label>
+          <input id="email" class="form-control" type="email" name="email" value="" placeholder="Enter your Email" required>
+        </div>
+        <div class="age">
+          <label id="number-label" for="number">Age:</label>
+          <input id="number" class="form-control" type="number" name="age"
+          value="18" min="18" max="65" placeholder="Enter your Age">
+        </div>
+        <div class="fruit_like">
+          <p>Which fruit you like?</p>
+          <select id="dropdown">
+            <option disabled selected value>Choose something here!</option>
+            <option value="Apple">Apple</option>
+            <option value="Orange">Orange</option>
+            <option value="Peach">Peach</option>
+          </select>
+        </div>
+        <div>
+          <p>Do you eat fruit before go to bed?</p>
+          <label>
+            <input class="radio-check" type="radio" name="fruit-bed" value="yes">
+            Yes
+          </label><br>
+          <label>
+            <input class="radio-check" type="radio" name="fruit-bed" value="no">
+            No
+          </label><br>
+          <label>
+            <input class="radio-check" type="radio" name="fruit-bed" value="sometimes">
+            Sometimes
+          </label><br>
+        </div>
+        <div class="profession">
+          <p>Your profession<span >(Multilable Check)</span></p>
+          <label>
+            <input class="profession-check" type="checkbox" name="profession" value="Student">Student
+          </label></br>
+          <label>
+            <input class="profession-check" type="checkbox" name="profession" value="Doctor">Doctor
+          </label></br>
+          <label>
+            <input class="profession-check" type="checkbox" name="profession" value="Teacher">Teacher
+          </label>
+        </div>
+        <div class="feedback">
+          <p>Any feedback or suggestions?</p>
+          <textarea class="textarea" name="comments" rows="8" cols="80"></textarea>
+        </div>
+        <div class="submit">
+          <button id="submit" type="submit" name="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

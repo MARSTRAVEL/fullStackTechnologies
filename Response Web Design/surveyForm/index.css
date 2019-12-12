@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+      115deg,
+      rgba(51, 255, 51, 0.8),
+      rgba(230, 255, 230, 0.7)
+    )
+    ;
+}
+
+html{
+  height:100%;
+}
+
+header{
+   text-align: center;
+}
+#description{
+  margin-top: 0.1rem;
+}
+.container{
+  height: 100%;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.flex-container > div{
+  width: 100%;
+  padding: 0.4rem;
+}
+
+.form-control{
+  width: 100%;
+  height: 2rem;
+  display: block;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+#dropdown{
+  width: 100%;
+  height: 2rem;
+  display: block;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+.profession-check, .radio-check{
+  display: inline;
+  margin-right: 0.625rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: Helvetica;
+}
+.textarea{
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+#submit{
+  width: 100%;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+  height: 1.9rem;
+  }

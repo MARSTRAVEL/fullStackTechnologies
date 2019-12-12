@@ -1,0 +1,150 @@
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+@media (max-width: 864px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 0px;
+}
+
+.logo{
+  height: 5rem;
+  width:  5rem;
+}
+#nav-bar ul {
+  width: 35rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+li{
+  list-style: none;
+}
+li:hover{
+  background-color: gray;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.container{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 10rem;
+}
+#contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  align-items: center;
+}
+#email:focus{
+  background-color: #e6ffe6;
+}
+#email{
+  border-style: none none solid none;
+  border-width: 2px;
+  height: 20px;
+  width: 15rem;
+}
+#submit{
+  background-color:green;
+  border-style: none;
+  height: 22px;
+  width: 5rem;
+}
+#what{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#video{
+  width: 100%;
+}
+#why{
+  padding: 30px;
+  height:600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Reason{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+}
+#prices{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#prices >div{
+  border-style: solid;
+  border-width: 1px;
+  margin-left: 5px;
+  width: calc(100%  / 5);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+#prices > div >ul >li {
+  padding:3px;
+  font-size: 20px;
+}
+.order_button{
+  background-color: green;
+  font-size: 20px;
+  height: 30px;
+  margin-bottom: 20px;
+  width: 50%;
+  margin-left: 25%;
+}
+#footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #cce0ff;
+  margin-top:50px;
+  width: 100%;
+  padding: 50px;
+}

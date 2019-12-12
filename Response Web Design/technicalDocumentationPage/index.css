@@ -1,0 +1,63 @@
+html{
+  height:100%;
+}
+body{
+  height: 100%;
+}
+.container{
+height: 100%;
+}
+
+#navbar{
+  width: 20%;
+  position: fixed;
+  overflow-y: scroll;
+  height: 100%;
+  border-style: none solid none none;
+}
+#navbar header{
+  font-size: 30px;
+  color: black;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  #navbar header{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+  }
+}
+#navbar >ul{
+  list-style-type: none;
+}
+#navbar li{
+  position: relative;
+  padding: 10px;
+  margin-left: -30px;
+  margin-top: 5px;
+}
+#navbar a{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+#navbar a:hover{
+  background-color: gray;
+}
+.nav-link{
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc{
+  width: 80%;
+  margin-left: 22%;
+  height: 100%;
+}
+.main-section header{
+  font-size: 30px;
+}
+code{
+  background-color: #f0f0f5;
+}

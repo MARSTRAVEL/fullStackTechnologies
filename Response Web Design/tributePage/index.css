@@ -1,0 +1,75 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+body {
+  background: #f5f5f5;
+}
+.head-section{
+  padding:20px;
+  background: repeating-linear-gradient(
+      45deg,
+      white 0px,
+      gray 40px,
+      yellow 40px,
+      gray 80px
+    );
+}
+.head-section p{
+  font-size: 20px;
+  font-weight: bold;
+  text-align:center;
+}
+
+#title{
+  text-align:center;
+}
+
+#threeCs{
+  padding-left: 80px;
+}
+figure{
+  margin-top: -50px;
+}
+figcaption{
+  margin-top: -30px;
+  font-size: 20px;
+}
+
+#image{
+  max-width: 100%;
+  height: auto;
+  display:block;
+  border-radius: 20%;
+  transform: scale(0.85);
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#img-caption{
+  text-align:center;
+}
+#main-content h2{
+  text-align:center;
+}
+
+#main-content div{
+  width:80%;
+  height:100%;
+  display: block;
+  padding-top: 5%;
+  box-shadow:10px 10px 5px grey;
+  margin: auto;
+  text-align:left;
+}
+#main-content p{
+  font-size: 20px;
+}
+#readMore{
+  padding:20px;
+}
+#readMore {
+  text-align: center;
+  font-size: 25px;
+}

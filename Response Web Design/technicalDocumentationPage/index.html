@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Techniqual documentation</title>
+  <!--  Styles  -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <nav id="navbar">
+      <header>Modern Javascript</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#code_editor">Code Editor</a></li>
+        <li><a class="nav-link" href="#developer_console">Developer Console</a></li>
+        <li><a class="nav-link" href="#coding_style">Coding Style</a></li>
+        <li><a class="nav-link" href="#ninja_code">Ninja Code</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>Let’s see what’s so special about JavaScript, what we can achieve with it, and which other technologies play well with it.</p>
+      <p>The programs in this language are called scripts. They can be written right in a web page’s HTML and run automatically as the page loads.</p>
+      <p>Scripts are provided and executed as plain text. They don’t need special preparation or compilation to run.
+
+        In this aspect, JavaScript is very different from another language called Java.</p>
+        <p>Today, JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called the JavaScript engine.
+
+The browser has an embedded engine sometimes called a “JavaScript virtual machine”.
+
+Different engines have different “codenames”. For example:</p>
+      <ul>
+        <li>V8 – in Chrome and Opera.</li>
+        <li>SpiderMonkey – in Firefox.</li>
+        <li>…There are other codenames like “Trident” and “Chakra” for different versions of IE, “ChakraCore” for Microsoft Edge, “Nitro” and “SquirrelFish” for Safari, etc.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="code_editor">
+      <header>Code Editor</header>
+      <p>A code editor is the place where programmers spend most of their time.
+
+There are two main types of code editors: IDEs and lightweight editors. Many people use one tool of each type.</p>
+<p>The term IDE (Integrated Development Environment) refers to a powerful editor with many features that usually operates on a “whole project.” As the name suggests, it’s not just an editor, but a full-scale “development environment.”
+
+An IDE loads the project (which can be many files), allows navigation between files, provides autocompletion based on the whole project (not just the open file), and integrates with a version management system (like git), a testing environment, and other “project-level” stuff.</p>
+<p>f you haven’t selected an IDE yet, consider the following options:</p>
+<ul>
+  <li>Visual Studio Code (cross-platform, free).</li>
+  <li>WebStorm (cross-platform, paid).</li>
+</ul>
+<p>“Lightweight editors” are not as powerful as IDEs, but they’re fast, elegant and simple.
+
+They are mainly used to open and edit a file instantly.
+
+The main difference between a “lightweight editor” and an “IDE” is that an IDE works on a project-level, so it loads much more data on start, analyzes the project structure if needed and so on. A lightweight editor is much faster if we need only one file.
+
+In practice, lightweight editors may have a lot of plugins including directory-level syntax analyzers and autocompleters, so there’s no strict border between a lightweight editor and an IDE.</p>
+<p>The following options deserve your attention:</p>
+<ul>
+  <li>Atom (cross-platform, free).</li>
+  <li>Visual Studio Code (cross-platform, free).</li>
+  <li>Sublime Text (cross-platform, shareware).</li>
+  <li>Notepad++ (Windows, free).</li>
+  <li>Vim and Emacs are also cool if you know how to use them.</li>
+</ul>
+he editors in the lists above are those that either I or my friends whom I consider good developers have been using for a long time and are happy with.
+
+There are other great editors in our big world. Please choose the one you like the most.
+
+The choice of an editor, like any other tool, is individual and depends on your projects, habits, and personal preferences.
+    </section>
+    <section class="main-section" id="developer_console">
+      <header>Developer Console</header>
+      <p>Code is prone to errors. You will quite likely make errors… Oh, what am I talking about? You are absolutely going to make errors, at least if you’re a human, not a robot.
+
+But in the browser, users don’t see errors by default. So, if something goes wrong in the script, we won’t see what’s broken and can’t fix it.
+
+To see errors and get a lot of other useful information about scripts, “developer tools” have been embedded in browsers.
+
+Most developers lean towards Chrome or Firefox for development because those browsers have the best developer tools. Other browsers also provide developer tools, sometimes with special features, but are usually playing “catch-up” to Chrome or Firefox. So most developers have a “favorite” browser and switch to others if a problem is browser-specific.
+
+Developer tools are potent; they have many features. To start, we’ll learn how to open them, look at errors, and run JavaScript commands.</p>
+<p>Google Chrome
+
+Open the page bug.html.
+
+There’s an error in the JavaScript code on it. It’s hidden from a regular visitor’s eyes, so let’s open developer tools to see it.
+
+Press F12 or, if you’re on Mac, then Cmd+Opt+J.
+
+The developer tools will open on the Console tab by default.</p>
+<p>Firefox, Edge, and others
+
+Most other browsers use F12 to open developer tools.
+
+The look & feel of them is quite similar. Once you know how to use one of these tools (you can start with Chrome), you can easily switch to another.</p>
+<p>Safari
+
+Safari (Mac browser, not supported by Windows/Linux) is a little bit special here. We need to enable the “Develop menu” first.
+
+Open Preferences and go to the “Advanced” pane. There’s a checkbox at the bottom:</p>
+
+    </section>
+    <section class="main-section" id="coding_style">
+      <header>Coding Style</header>
+      <p>Our code must be as clean and easy to read as possible.
+
+That is actually the art of programming – to take a complex task and code it in a way that is both correct and human-readable. A good code style greatly assists in that.</p>
+<p>Syntax
+
+Here is a cheat sheet with some suggested rules (see below for more details):</p>
+<p>Curly Braces
+
+In most JavaScript projects curly braces are written in “Egyptian” style with the opening brace on the same line as the corresponding keyword – not on a new line. There should also be a space before the opening bracket, like this:</p>
+<code>
+  <ol>
+    <li>if(condition){ </li>
+    <li>//do this</li>
+    <li>//... and That</li>
+    <li>//... and that</li>
+  </ol>
+
+  }<br>
+</code>
+<p>A single-line construct, such as if (condition) doSomething(), is an important edge case. Should we use braces at all?
+
+Here are the annotated variants so you can judge their readability for yourself:</p>
+<ol>
+  <li>Beginners sometimes do that. Bad! Curly braces are not needed:<br>
+    <code>if (n < 0) {alert(`Power ${n} is not supported`);}</code>
+  </li>
+  <li>Split to a separate line without braces. Never do that, easy to make an error when adding new lines:<br>
+    <code>
+      <ol>
+        <li>if (n < 0)</li>
+        <li>alert(`Power ${n} is not supported`);</li>
+      </ol>
+    </code>
+  </li>
+  <li>One line without braces – acceptable, if it’s short:<br>
+    <code>if (n < 0) alert(`Power ${n} is not supported`);</code>
+  </li>
+  <li>The best variant:<br>
+    <ol>
+      <li>if (n < 0) {</li>
+        <li>alert(`Power ${n} is not supported`);</li>
+        <li>}</li>
+    </ol>
+  </li>
+</ol>
+    </section>
+    <section class="main-section" id="ninja_code">
+      <header>Ninja Code</header>
+      <p>Programmer ninjas of the past used these tricks to sharpen the mind of code maintainers.
+
+Code review gurus look for them in test tasks.
+
+Novice developers sometimes use them even better than programmer ninjas.
+
+Read them carefully and find out who you are – a ninja, a novice, or maybe a code reviewer?</p>
+<p>Brevity is the soul of wit
+
+Make the code as short as possible. Show how smart you are.
+
+Let subtle language features guide you.
+
+For instance, take a look at this ternary operator '?':</p>
+<code>// taken from a well-known javascript library <br>
+i = i ? i < 0 ? Math.max(0, len + i) : i : 0;</code>
+<p>Cool, right? If you write like that, a developer who comes across this line and tries to understand what is the value of i is going to have a merry time. Then come to you, seeking for an answer.
+
+Tell them that shorter is always better. Initiate them into the paths of ninja.</p>
+
+    </section>
+    </main>
+  </div>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
